@@ -11,11 +11,15 @@ Nodejs and prompt-sync depency is needed.
 
 ## Screenshots
 
-#Os info
+# Os info
 
 ![Alt text](/screenshots/os.JPG?raw=true?raw=true)
 
+# Package
+
 ![Alt text](/screenshots/package.JPG?raw=true?raw=true)
+
+# Webserver
 
 ![Alt text](/screenshots/webserver.JPG?raw=true?raw=true)
 
