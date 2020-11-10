@@ -10,11 +10,11 @@ Nodejs and prompt-sync dependency is needed.
 
 ## Screenshots
 
-### Display Os info
-![Alt text](/screenshots/os.JPG?raw=true?raw=true)
-
 ###  Reading package.json
 ![Alt text](/screenshots/package.JPG?raw=true?raw=true)
+
+### Display Os info
+![Alt text](/screenshots/os.JPG?raw=true?raw=true)
 
 ### Start Webserver
 ![Alt text](/screenshots/webserver.JPG?raw=true?raw=true)
