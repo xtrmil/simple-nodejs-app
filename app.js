@@ -24,10 +24,6 @@ function readFile() {
     fs.readFile('package.json', 'utf-8', (err, content) => {
         console.log(content);
     });
-
-    let rawdata = fs.readFileSync('package.json');
-    let student = JSON.parse(rawdata);
-    console.log(student);
 }
 
 function osInfo() {
@@ -46,7 +42,7 @@ function startServer() {
 
     http.createServer(function (request, response) {
         response.writeHead(200, { 'Content-Type': 'text/plain' });
-        response.end('Hello Sean\n');
+        response.end('Hello World\n');
     }).listen(3000);
     console.log('Server running at http://127.0.0.1:3000/');
 }
