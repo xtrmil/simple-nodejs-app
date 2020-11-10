@@ -11,13 +11,13 @@ Nodejs and prompt-sync depency is needed.
 
 ## Screenshots
 
-### Os info
+### Display Os info
 ![Alt text](/screenshots/os.JPG?raw=true?raw=true)
 
-### Package
+###  Reading file
 ![Alt text](/screenshots/package.JPG?raw=true?raw=true)
 
-### Webserver
+### Start Webserver
 ![Alt text](/screenshots/webserver.JPG?raw=true?raw=true)
 
 
