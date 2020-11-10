@@ -10,9 +10,8 @@ User input its choice and the function excecutes
 Nodejs and prompt-sync depency is needed.
 
 ## Screenshots
-#
 
-![Alt text](/screenshots/options.JPG?raw=true?raw=true)
+#Os info
 
 ![Alt text](/screenshots/os.JPG?raw=true?raw=true)
 
