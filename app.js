@@ -1,48 +1,57 @@
-const prompt = require('prompt-sync')();
-console.log("1. Read package.json");
-console.log("2. Display OS info");
-console.log("3. Start HTTP server");
-const num = prompt('Enter a number: ');
+const prompt = require('prompt-sync')()
+console.log('1. Read package.json file' + '\n' +
+            '2. Display OS info' + '\n' +
+            '3. Start HTTP server' + '\n')
+const input = prompt('Enter a number: ')
 
-    switch (Number(num)) {
+menySelect(input)
+
+function menySelect(input){
+
+    switch (Number(input)){
+
         case 1:
-            readFile();
+            readFile()
             break;
         case 2:
-            osInfo();
+            osInfo()
             break;
         case 3:
-            startServer();
+            startServer()
             break;
         default:
-            console.log("Invalid option.");
+            console.log('Invalid option.')
+            process.exit(1)
             break;
+
     }
+}
 
 function readFile() {
-    const fs = require('fs');
+    const fs = require('fs')
     fs.readFile('package.json', 'utf-8', (err, content) => {
-        console.log(content);
-    });
+        console.log('Reading package.json'+'\n' + content)
+    })
 }
 
-function osInfo() {
-    const os = require('os');
-    console.log('SYSTEM MEMORY:', (os.totalmem() / 1024 / 1024 / 1024).toFixed(2) + 'GB');
-    console.log('FREE MEMORY:', (os.freemem() / 1024 / 1024 / 1024).toFixed(2) + 'GB');
-    console.log('CPU CORES:', os.cpus().length);
-    console.log('ARCH:', os.arch());
-    console.log('PLATFORM:', os.platform());
-    console.log('RELEASE:', (os.release()));
-    console.log('USER:', os.userInfo().username);
+function osInfo(){
+    const os = require('os')
+    console.log('Getting OS info...' + '\n'+
+                'SYSTEM MEMORY:', (os.totalmem() / 1024 / 1024 / 1024).toFixed(2) + 'GB' + '\n' +
+                'FREE MEMORY:', (os.freemem() / 1024 / 1024 / 1024).toFixed(2) + 'GB' + '\n' +
+                'CPU CORES:', os.cpus().length + '\n' +
+                'ARCH:', os.arch() + '\n' +
+                'PLATFORM:', os.platform() + '\n' +
+                'RELEASE:', (os.release()) + '\n' +
+                'USER:', os.userInfo().username)
 }
 
-function startServer() {
-    const http = require("http");
-
+function startServer(){
+    const http = require("http")
+    console.log('Starting HTTP server...'+'\n')
     http.createServer(function (request, response) {
-        response.writeHead(200, { 'Content-Type': 'text/plain' });
-        response.end('Hello World\n');
-    }).listen(3000);
-    console.log('Server running at http://127.0.0.1:3000/');
+        response.writeHead(200, { 'Content-Type': 'text/plain' })
+        response.end('Hello World\n')
+    }).listen(3000)
+    console.log('Listening on port 3000...')
 }
