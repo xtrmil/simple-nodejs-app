@@ -9,10 +9,6 @@ User input its choice and the function excecutes
 
 Nodejs and prompt-sync depency is needed.
 
-```bash
-pip install foobar
-```
-
 ## Screenshots
 
 
