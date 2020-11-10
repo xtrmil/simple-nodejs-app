@@ -10,6 +10,9 @@ Nodejs and prompt-sync dependency is needed.
 
 ## Screenshots
 
+###  Menu
+![Alt text](/screenshots/menu.JPG?raw=true?raw=true)
+
 ###  Reading package.json
 ![Alt text](/screenshots/package.JPG?raw=true?raw=true)
 
